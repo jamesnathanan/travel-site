@@ -1,0 +1,130 @@
+/* Global Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-size: 2.6rem;
+}
+
+li,
+button,
+input,
+p {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 4.8rem;
+    
+}
+
+h3 {
+    font-size: 3rem;
+    font-weight: normal;
+    
+}
+
+h4,
+h5 {
+    font-size: 2.8rem;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+button {
+    background-color: #4c6e97;
+    color: white;
+    font-size: 1.8rem;
+    padding: 2rem 6rem;
+    border: none;
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Nav section with HERO */
+
+.main-head {
+    background-color: #131c27;
+    color: white;
+}
+
+nav {
+    /* min-height: 10vh; */
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    padding: 2rem;
+    min-height: 10vh;
+    flex-wrap: wrap;
+}
+
+nav ul {
+    display: flex;
+    flex: 1 1 40rem;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+#logo {
+    flex: 2 1 40rem; 
+    font-family: 'Dancing Script', cursive;
+    font-weight: 400;   
+}
+
+#inline-logo {
+    font-size: 4rem;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 100;
+}
+
+.hero {
+    background: linear-gradient(rgba(0,0,0, .5), transparent),url('/img/pexels-s-migaj-949193.jpg');
+    min-height: 90vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero h3 {
+    padding: 5rem;
+}
+
+@media screen and (max-width: 932px) {
+    
+    html {
+        font-size: 45%;
+    }
+    nav {
+        text-align: center;
+    }
+    #logo {
+        padding: 3rem 2rem;
+    }
+}
