@@ -99,7 +99,7 @@ nav ul {
 }
 
 .hero {
-    background: linear-gradient(rgba(0,0,0, .5), transparent),url('/img/pexels-s-migaj-949193.jpg');
+    background: linear-gradient(to right bottom,rgba(0,0,0, .8), transparent),url('/img/pexels-s-migaj-949193.jpg');
     min-height: 90vh;
     background-repeat: no-repeat;
     background-position: center;
@@ -116,6 +116,60 @@ nav ul {
     padding: 5rem;
 }
 
+/* BENEFITS SECTION */
+#locations {
+    min-height: 100vh;
+    background: linear-gradient(to right bottom,rgba(199, 82, 82, 0.76), transparent), url('/img/pexels-roberto-nickson-2417862.jpg');
+    background-position:  top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    position: relative;
+    
+}
+
+.locations-head {
+    width: 55%;
+    /* background-color: salmon; */
+    /* padding: 2rem; */
+    /* text-align: center; */
+    margin: auto 5rem auto;
+    transform: translateY(-20%);
+    padding: 2rem;
+    border: 2px black solid;
+    
+}
+
+.locations-head h2 {
+    padding: 1rem 0;
+    font-size: 2.8rem;
+    text-decoration: underline;
+    text-decoration-thickness: 0.5rem;
+}
+
+.locations-head h3 {
+    padding: 1rem 0;
+    font-size: 3rem;
+    background: linear-gradient(to right bottom,rgb(12, 12, 12), rgb(126, 130, 134));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+.cloud {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+}
+
+img.cloud {
+    width: 60%;
+    height: 60%;
+    opacity: 0.3;
+}   
+
+/* MEDIA QUERY */
 @media screen and (max-width: 932px) {
     
     html {
