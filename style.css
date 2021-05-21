@@ -54,6 +54,11 @@ button {
     padding: 2rem 6rem;
     border: none;
     cursor: pointer;
+    transition: background .3s ease-in-out;
+}
+
+button:hover {
+    background-color: #304866;
 }
 
 button:focus {
@@ -126,6 +131,7 @@ nav ul {
     display: flex;
     align-items: center;
     position: relative;
+    overflow: hidden;
     
 }
 
@@ -134,8 +140,8 @@ nav ul {
     /* background-color: salmon; */
     /* padding: 2rem; */
     /* text-align: center; */
-    margin: auto 5rem auto;
-    transform: translateY(-20%);
+    margin: 20rem 5rem auto;
+    transform: translateY(-40%);
     padding: 2rem;
     border: 2px black solid;
     
@@ -161,13 +167,39 @@ nav ul {
     position: absolute;
     top: 0%;
     right: 0%;
+    animation: cloudAnimation 3s infinite alternate ease-in-out;
 }
 
 img.cloud {
     width: 60%;
     height: 60%;
-    opacity: 0.3;
+    
+    
 }   
+
+.moving-cloud-1 {
+    opacity: .5;
+    z-index: 1;
+    mix-blend-mode: screen;
+    
+    
+    
+}
+.moving-cloud-2 {
+    opacity: .35;
+    top: -10%;
+    z-index: 0;
+    mix-blend-mode: screen;
+}
+
+@keyframes cloudAnimation {
+    from {
+        transform: translate(10%, -10%);
+    }
+    to {
+        transform: translate(0%, 0%);
+    }
+}
 
 /* MEDIA QUERY */
 @media screen and (max-width: 932px) {
@@ -180,5 +212,12 @@ img.cloud {
     }
     #logo {
         padding: 3rem 2rem;
+    }
+    img.cloud {
+        height: 20%;
+    }
+    .locations-head h3 {
+        background: rgba(42, 38, 59, 0.308);
+        -webkit-text-fill-color: rgb(197, 192, 192);
     }
 }
