@@ -244,7 +244,86 @@ img.cloud {
     padding: 1rem;
 }
 
+/* Contact section */
+#contact {
+    min-height: 100vh;
+    background: linear-gradient(rgba(204, 200, 200, 0.5), transparent),url("/img/pexels-eberhard-grossgasteiger-572897.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.form-wrapper {
+    background: rgba(85, 93, 128, 0.5);
+    width: 60%;
+    color: #fff;
+    border-radius: 20px;
+    
+}
+
+.form-head {
+    text-align: center;
+    padding: 4rem;
+}
+
+.name-form,
+.email-form {
+    padding: 3rem;
+    text-align: center;
+}
+
+.form-wrapper label {
+    margin: 0 3rem;
+}
+
+.form-wrapper button {
+    width: 100%;
+    border-radius: 0 0 20px 20px;
+    padding: 2rem;
+    margin-top: 4rem;
+}
+
+.form-wrapper input {
+    padding: 1rem 3rem;
+    width: 50%;
+}
+
+/* .footer-wrapper img {
+    filter: invert(100);
+} */
+footer {
+    color: white;
+    background: rgba(19, 28, 39, 1);
+}
+
+footer h5 {
+    flex: 1 1 40rem;
+}
+
+.footer-wrapper {
+    display: flex;
+    width: 90%;
+    padding: 2rem;
+    margin: auto;
+    align-items: center;
+    min-height: 10vh;
+    flex-wrap: wrap;
+}
+
+.footer-wrapper ul {
+    display: flex;
+    list-style: none;
+    flex: 1 1 40rem;
+    align-items: baseline;
+    justify-content: space-between;
+    
+}
+
+.footer-wrapper ul li img {
+    width: 70%;
+}
 
 /* MEDIA QUERY */
 @media screen and (max-width: 932px) {
@@ -264,5 +343,14 @@ img.cloud {
     .locations-head h3 {
         background: rgba(42, 38, 59, 0.308);
         -webkit-text-fill-color: rgb(197, 192, 192);
+    }
+    footer {
+        text-align: center;
+    }
+    footer h5 {
+        padding-bottom: 2rem;
+    }
+    .form-wrapper {
+        width: 95%;
     }
 }
