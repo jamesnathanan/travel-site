@@ -70,6 +70,9 @@ button:focus {
 .main-head {
     background-color: #131c27;
     color: white;
+    position: sticky;
+    top: 0px;
+    z-index: 3;
 }
 
 nav {
@@ -81,6 +84,7 @@ nav {
     padding: 2rem;
     min-height: 10vh;
     flex-wrap: wrap;
+    
 }
 
 nav ul {
